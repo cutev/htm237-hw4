@@ -43,7 +43,7 @@ window.fbAsyncInit = function(){
       for(i=0; i<resp.data.length; i+=1){
         group = resp.data[i];
         if(junkGroups.indexOf(group.id)!== -1){
-          results.append('<tr><td>'+group.id+'</td><tr>'group.name+'</td></tr>');
+          results.append('<tr><td>'+group.id+'</td><td>'group.name+'</td></tr>');
         }
       }
     // 2. 以 FB.api 拿到使用者的 group 列表
