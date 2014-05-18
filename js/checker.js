@@ -35,7 +35,7 @@ window.fbAsyncInit = function(){
     $('.hw4-complete').remove(); // 移除「掃描完成」
 
     // 1. 讓使用者登入此 Facebook App (FB.login)
-    FB.login(function)(){
+    FB.login(function(){
       console.log('Logged in!');
       FB.api('me/groups', function(){
       console.log('user_groups', resp.data);
